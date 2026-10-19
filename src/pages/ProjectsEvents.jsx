@@ -1,98 +1,66 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import Card from "../components/Card";
+import SectionCarousel from "../components/SectionCarousel";
 
 function ProjectsEvents() {
   return (
-    <div className="proyek-container">
-      {/* Header Halaman */}
-      <section className="proyek-header">
-        <h1>Proyek & Kegiatan Mapala</h1>
+    <SectionCarousel label="Section proyek dan event">
+      <Card title="Proyek & Kegiatan Mapala">
         <p>
           Rangkaian aksi nyata, ekspedisi alam bebas, serta program pelestarian
           lingkungan yang kami laksanakan secara berkelanjutan.
         </p>
-      </section>
+      </Card>
 
-      {/* Program Unggulan */}
-      <section className="proyek-section">
-        <h2>Program Unggulan</h2>
-        <div className="proyek-grid">
-          <div className="proyek-card">
-            <img
-              src="/Reboisasi.jpeg"
-              alt="Konservasi & Reboisasi Hutan"
-              style={{
-                width: "100%",
-                maxWidth: "300px",
-                borderRadius: "8px",
-                marginBottom: "10px",
-              }}
-            />
-            <h3>Konservasi & Reboisasi Hutan</h3>
-            <p>
-              Aksi penanaman ribuan bibit pohon di kawasan lereng gunung dan
-              pesisir guna mencegah erosi, menjaga sumber mata air, serta
-              memulihkan ekosistem alam yang rusak.
-            </p>
-          </div>
+      <Card
+        title="Konservasi & Reboisasi Hutan"
+        image="/Reboisasi.jpeg"
+        imageAlt="Penanaman bibit pohon"
+      >
+        <p>
+          Aksi penanaman ribuan bibit pohon di kawasan lereng gunung dan pesisir
+          guna mencegah erosi, menjaga sumber mata air, serta memulihkan
+          ekosistem alam yang rusak.
+        </p>
+      </Card>
 
-          <div className="proyek-card">
-            <img
-              src="/Api unggun.jpeg"
-              alt="Pendidikan & Pelatihan Dasar (DIKSAR)"
-              style={{
-                width: "100%",
-                maxWidth: "300px",
-                borderRadius: "8px",
-                marginBottom: "10px",
-              }}
-            />
-            <h3>Pendidikan & Pelatihan Dasar (DIKSAR)</h3>
-            <p>
-              Program pembinaan rutin bagi calon anggota baru mencakup navigasi
-              darat, teknik bertahan hidup (survival), pertolongan pertama (P3K
-              lapangan), dan etika lingkungan.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Card
+        title="Pendidikan & Pelatihan Dasar (DIKSAR)"
+        image="/Api unggun.jpeg"
+        imageAlt="Api unggun saat DIKSAR"
+      >
+        <p>
+          Program pembinaan rutin bagi calon anggota baru mencakup navigasi
+          darat, teknik bertahan hidup (survival), pertolongan pertama (P3K
+          lapangan), dan etika lingkungan.
+        </p>
+      </Card>
 
-      {/* Kegiatan Mendatang */}
-      <section className="proyek-section">
-        <h2>Kegiatan Mendatang</h2>
-        <div className="proyek-grid">
-          <div className="proyek-card highlight">
-            <img
-              src="/Hiking.jpeg"
-              alt="Pendakian Bersama & Pendataan Jalur"
-              style={{
-                width: "100%",
-                maxWidth: "300px",
-                borderRadius: "8px",
-                marginBottom: "10px",
-              }}
-            />
-            <h3>Pendakian Bersama & Pendataan Jalur</h3>
-            <p>
-              <strong>Waktu:</strong> Semester Ini
-            </p>
-            <p>
-              Pendakian eksplorasi sekaligus pemetaan kembali kondisi jalur
-              pendakian dan penandaan titik-titik rawan longsor.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Card
+        title="Pendakian Bersama & Pendataan Jalur"
+        image="/Hiking.jpeg"
+        imageAlt="Pendakian bersama"
+      >
+        <p>
+          <strong>Waktu:</strong> Semester ini. Pendakian eksplorasi sekaligus
+          pemetaan kembali kondisi jalur pendakian dan penandaan titik-titik
+          rawan longsor.
+        </p>
+        <p>
+          <Link to="/event/1" className="card__link">
+            Lihat detail event
+          </Link>
+        </p>
+      </Card>
 
-      {/* Arsip / Galeri Singkat */}
-      <section className="proyek-section">
-        <h2>Arsip & Pencapaian</h2>
+      <Card title="Arsip & Pencapaian">
         <p>
           Seluruh rekam jejak kegiatan, laporan hasil ekspedisi, dan dokumentasi
           lapangan tersimpan dalam arsip resmi organisasi sebagai bahan evaluasi
           serta pembelajaran bagi generasi penerus.
         </p>
-      </section>
-    </div>
+      </Card>
+    </SectionCarousel>
   );
 }
 

@@ -1,16 +1,23 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import Card from "../components/Card";
+import SectionCarousel from "../components/SectionCarousel";
 
 export default function EventDetail() {
   const { id } = useParams();
 
   return (
-    <div className="event-detail-page">
-      <h1>Detil Event #{id}</h1>
-      <p>
-        [Placeholder: Informasi lengkap mengenai event yang dipilih, tanggal,
-        lokasi, dan deskripsi kegiatan]
-      </p>
-    </div>
+    <SectionCarousel label={`Detail event ${id}`}>
+      <Card title={`Detil Event #${id}`}>
+        <p>
+          [Placeholder: Informasi lengkap mengenai event yang dipilih, tanggal,
+          lokasi, dan deskripsi kegiatan]
+        </p>
+        <p>
+          <Link to="/proyek-event" className="card__link">
+            Kembali ke Event/Proyek
+          </Link>
+        </p>
+      </Card>
+    </SectionCarousel>
   );
 }
