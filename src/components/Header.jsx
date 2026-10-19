@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-// Ganti file logo di sini kalau logo PNG-nya sudah ada (taruh di folder public/).
 const LOGO_SRC = "/logo.svg";
 
 export default function Header() {
