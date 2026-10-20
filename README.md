@@ -1,3 +1,46 @@
+MAPALA Website
+
+Website profil Mahasiswa Pecinta Alam (MAPALA) yang dibuat dengan React, Vite, dan React Router. Tiap halaman berisi kartu section yang bisa digeser kiri dan kanan. untuk mejalankan menjalankan program tersebut secara lokal, anda dapat mengikuti langkah langkah berikut 
+
+Persyaratan
+
+- [Node.js](https://nodejs.org/) versi 20.19 atau lebih baru (atau 22.12+), sesuai kebutuhan Vite 8
+- npm (ikut terpasang bersama Node.js)
+- Koneksi internet, karena font Roboto Condensed dimuat dari Google Fonts
+
+Cek versi Node.js dengan:
+
+```bash
+node -v
+```
+
+Cara menjalankan secara lokal
+
+1. Clone repositori dan masuk ke foldernya:
+
+```bash
+   git clone <url repositori>
+   cd proyek-mapala-uts
+```
+
+2. Pasang dependensi:
+
+```bash
+   npm install
+```
+
+3. Jalankan server pengembangan:
+
+```bash
+   npm run dev
+```
+
+4. Buka alamat yang tampil di terminal, biasanya http://localhost:5173.
+
+Tekan `Ctrl + C` di terminal untuk menghentikan server.
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
