@@ -1,6 +1,6 @@
 MAPALA Website
 
-Website profil Mahasiswa Pecinta Alam (MAPALA) yang dibuat dengan React, Vite, dan React Router. Tiap halaman berisi kartu section yang bisa digeser kiri dan kanan. untuk mejalankan menjalankan program tersebut secara lokal, anda dapat mengikuti langkah langkah berikut 
+Website Unit kegiatan Mahasiswa Pecinta Alam (MAPALA) yang dibuat dengan React, Vite, dan React Router. Tiap halaman berisi kartu section yang bisa digeser kiri dan kanan. untuk mejalankan menjalankan program tersebut secara lokal, anda dapat mengikuti langkah langkah berikut 
 
 Persyaratan
 
@@ -19,7 +19,7 @@ Cara menjalankan secara lokal
 1. Clone repositori dan masuk ke foldernya:
 
 ```bash
-   git clone <url repositori>
+   git clone <https://github.com/gustavo-dev-rgb/proyek-mapala-uts>
    cd proyek-mapala-uts
 ```
 
